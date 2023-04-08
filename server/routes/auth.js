@@ -1,20 +1,53 @@
 const router = require("express").Router();
 const User = require("../models/User")
-//REGISTER
-router.post("/register", (req, res) => {
-    const newUser = new User({
-        username:req.body.username,
-        email:req.body.email,
-        password:req.body.password,
-    });
+const CryptoJS = require("crypto-js")
+const bcrypt = require("bcrypt")
 
-    newUser.save()
-    .then(usr=>{
-        console.log(usr);
-    })
-    .catch(err=>{
-        console.log(err)
-    })
+//REGISTER
+
+router.post("/register", async (req, res) => {
+
+    try{
+        //generate salt and hash password
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(req.body.password, salt);
+
+        //creating new user
+        const newUser = new User({
+            username:req.body.username,
+            email:req.body.email,
+            password: hashedPassword
+        })
+
+        //save new user to database
+        const user = await newUser.save();
+        res.status(200).json(user);
+
+    }catch(err){
+        res.status(500).json(err)
+    }
+    
+
+ 
 });
+
+//LOGIN
+router.get("/login", async (req, res)=>{
+    try{
+        //checking if username exist in database
+        const user = await User.findOne({username: req.body.username})
+        if(!user) return res.status(401).json("Wrong credentials")
+        
+        //comparing entered password with a password in the database 
+        const validPassword = await bcrypt.compare(req.body.password, user.password);
+        if(!validPassword) return res.status(401).json("Wrong credentials")
+
+        res.status(200).json(user);
+
+    }catch(err){
+        res.status(500).json(err)
+    }
+
+})
 
 module.exports = router;

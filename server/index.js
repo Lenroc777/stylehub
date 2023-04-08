@@ -2,10 +2,10 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv")
+dotenv.config({path: __dirname+'/.env'});
 const userRoute = require("./routes/user")
 const authRoute = require("./routes/auth")
 
-dotenv.config({path: __dirname+'/.env'});
 
 mongoose
     .connect(
@@ -16,7 +16,7 @@ mongoose
     );
 
 app.use(express.urlencoded());
-
+app.use(express.json())
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 
