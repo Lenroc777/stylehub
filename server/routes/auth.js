@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const User = require("../models/User")
-const CryptoJS = require("crypto-js")
 const bcrypt = require("bcrypt")
+const jwt = require("jsonwebtoken")
 
 //REGISTER
 
@@ -42,7 +42,14 @@ router.get("/login", async (req, res)=>{
         const validPassword = await bcrypt.compare(req.body.password, user.password);
         if(!validPassword) return res.status(401).json("Wrong credentials")
 
-        res.status(200).json(user);
+        const accessToken = jwt.sign({
+            id: user._id,
+            isAdmin: user.isAdmin,
+        }, process.env.JWT_KEY, {expiresIn: "3d"})
+
+        const {password, ...others} = user._doc;
+
+        res.status(200).json({...others, accessToken});
 
     }catch(err){
         res.status(500).json(err)
