@@ -2,6 +2,7 @@ const router = require("express").Router();
 const User = require("../models/User")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
+const CryptoJS = require("crypto-js")
 
 //REGISTER
 
@@ -9,9 +10,10 @@ router.post("/register", async (req, res) => {
 
     try{
         //generate salt and hash password
-        const salt = await bcrypt.genSalt(10);
-        const hashedPassword = await bcrypt.hash(req.body.password, salt);
+        // const salt = await bcrypt.genSalt(10);
+        // const hashedPassword = await bcrypt.hash(req.body.password, salt);
 
+        let hashedPassword = CryptoJS.AES.encrypt(req.body.password, process.env.JWT_KEY).toString();
         //creating new user
         const newUser = new User({
             username:req.body.username,
