@@ -1,3 +1,5 @@
-lenroc777
-JbyDZKWgcAxXPXj2
-rMX79KtCA0vuZFYI
+Project inspired and done following the Lama Dev tutorial.
+
+Main goal of the project is to create fullstack e-commerce application and learn new tools used in commercial programing. 
+To build the frontend I used React and styled components. Backend is handled by Node JS framework - express. To store data I used Mongo DB. 
+Project uses JWT to authenticate users.
