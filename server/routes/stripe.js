@@ -1,8 +1,10 @@
-const router = require("express")
+const router = require("express").Router()
 const stripe = require("stripe")(process.env.STRIPE_KEY)
+// console.log(stripe)
 
-router.post("/payment", (req, res)=>{
-    stripe.charge.create({
+router.post("/payment", async (req, res)=>{
+
+    stripe.charges.create({
         source: req.body.tokenId,
         amount: req.body.amount,
         currency: "usd",
@@ -14,6 +16,5 @@ router.post("/payment", (req, res)=>{
     }
 })
 })
-
 
 module.exports = router
