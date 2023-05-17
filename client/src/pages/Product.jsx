@@ -7,6 +7,11 @@ import Newsletter from "../components/Newsletter";
 import {mobile} from "../responsive"
 import { useLocation } from "react-router";
 import { LineAxisOutlined } from "@mui/icons-material";
+import { publicRequest } from "../requestMethods";
+import { useState } from "react";
+import { addProduct } from "../redux/cartRedux";
+import { useDispatch } from "react-redux";
+
 
 const Container = styled.div``
 const Wrapper = styled.div`
@@ -99,7 +104,9 @@ const AmountContainer = styled.div`
     align-items: center;
     font-weight: 700;
 `
-const Remove = styled.div``
+const Remove = styled.div`
+    cursor: pointer;
+`
 const Amount = styled.span`
     width: 30px;
     height: 30px;
@@ -110,7 +117,9 @@ const Amount = styled.span`
     justify-content: center;
     margin: 0px 5px;
 `
-const Add = styled.div``
+const Add = styled.div`
+    cursor: pointer;
+`
 const Button = styled.button`
     padding: 15px;
     border: 1px solid teal;
@@ -126,19 +135,39 @@ const Button = styled.button`
 const Product = () => {
 
     const location = useLocation();
-    const cat = (location.pathname.split("/")[2])
-    // const [product, setProduct] = useState({})
+    const id = (location.pathname.split("/")[2])
+    const [product, setProduct] = useState({})
+    const [quantity, setQuantity] = useState(1)
+    const [color, setColor] = useState("")
+    const [size, setSize] = useState("")
+    const dispatch = useDispatch();
+    useEffect(()=>{
+        const getProduct = async () =>{
 
-    // useEffect(()=>{
-    //     const getProduct = async () =>{
+            try {
+                const res = await publicRequest.get("/products/find/"+id);
+                setProduct(res.data);
+            } catch (error) {
+                console.log(error)
+            }
+        }
+        
+        getProduct();
+        console.log(Object.keys(product));
+        console.log(product.color);
+    }, [id])
 
-    //         try {
-    //             const res = axios
-    //         } catch (error) {
-    //             console.log(error)
-    //         }
-    //     }
-    // }, [id])
+    const handleQuantity = (type) =>{
+        if(type === "desc"){
+            quantity > 1 && setQuantity(quantity-1)
+        }else{
+            setQuantity(quantity+1)
+        }
+    }
+
+    const handleClick = ()=>{
+        dispatch(addProduct({...product, quantity, color, size}))
+    }
 
     return ( 
         <Container>
@@ -146,39 +175,42 @@ const Product = () => {
             <Announcement/>
             <Wrapper>
                 <ImgContainer>
-                    <Image src="https://images.pexels.com/photos/984619/pexels-photo-984619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    <Image src={product.img}/>
                 </ImgContainer>
                 <InfoContainer>
-                    <Title>Sunshine hat</Title>
-                    <Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, odio repudiandae dolorum atque nulla accusantium aperiam quidem possimus est, iste libero repellendus nesciunt dolore soluta! Blanditiis id voluptatem corporis dignissimos?</Desc>
-                    <Price>$ 38.99</Price>
+                    <Title>{product.title}</Title>
+                    <Desc>{product.desc}</Desc>
+                    <Price>$ {product.price}</Price>
                     <FilterContainer>
                         <Filter>
                             <FilterTitle>
                                 Color
                             </FilterTitle>
-                            <FilterColor color="black"/>
-                            <FilterColor color="darkblue"/>
-                            <FilterColor color="gray"/>
+                            {product && product.color && product.color.map((c) => <FilterColor color={c} key={c} onClick={()=>setColor(c)}/>)}
+
+                            {
+                                // product.color.map((c)=>(<FilterColor color={c} key={c}/>))
+                            }
+                            
                         </Filter>
                         <Filter>
                             <FilterTitle>Size</FilterTitle>
-                            <FilterSize>
-                            <FilterSizeOption>XS</FilterSizeOption>
-                            <FilterSizeOption>S</FilterSizeOption>
-                            <FilterSizeOption>M</FilterSizeOption>
-                            <FilterSizeOption>L</FilterSizeOption>
-                            <FilterSizeOption>XL</FilterSizeOption>
+                            <FilterSize onChange={(e)=>setSize(e.target.value)}>
+                            
+                            {/* <FilterSizeOption>XS</FilterSizeOption> */}
+                            {product.size && product.size.map((s)=>{
+                                return <FilterSizeOption key={s} >{s}</FilterSizeOption>
+                            })}
                             </FilterSize>
                         </Filter>
                     </FilterContainer>
                     <AddContainer>
                         <AmountContainer>
-                            <Remove>-</Remove>
-                            <Amount>1</Amount>
-                            <Add>+</Add>
+                            <Remove onClick={()=>handleQuantity("desc")}>-</Remove>
+                            <Amount>{quantity}</Amount>
+                            <Add onClick={()=>handleQuantity("asc")}>+</Add>
                         </AmountContainer>
-                        <Button>Add to cart</Button>
+                        <Button onClick={()=>handleClick()}>Add to cart</Button>
                     </AddContainer>
                 </InfoContainer>
             </Wrapper>
