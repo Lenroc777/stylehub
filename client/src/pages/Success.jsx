@@ -31,21 +31,23 @@ const Success = () => {
 //   }, [cart, data, currentUser]);
 
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      { true //orderId
-        // ? `Order has been created successfully. Your order number is ${orderId}`
-        ? `Order has been created successfully. Your order number is 123`
-        : `Successfull. Your order is being prepared...`}
-      <button style={{ padding: 10, marginTop: 20 }}>Go to Homepage</button>
-    </div>
+    // <div
+    //   style={{
+    //     height: "100vh",
+    //     display: "flex",
+    //     flexDirection: "column",
+    //     alignItems: "center",
+    //     justifyContent: "center",
+    //   }}
+    // >
+    //   { true //orderId
+    //     // ? `Order has been created successfully. Your order number is ${orderId}`
+    //     ? `Order has been created successfully. Your order number is 123`
+    //     : `Successfull. Your order is being prepared...`}
+    //   <button style={{ padding: 10, marginTop: 20 }}>Go to Homepage</button>
+    // </div>
+
+    <div> Success </div>
   );
 };
 
