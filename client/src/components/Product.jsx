@@ -9,7 +9,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5fbfd;
+    // background-color: #f5fbfd;
     position: relative;
 `
 const Circle = styled.div`
@@ -59,17 +59,22 @@ const Icon = styled.div`
     }
 `
 
+const linkStyle = {
+    textDecoration: "none",
+    color: 'black'
+  };
+
 const Product = ({item}) => {
     return ( 
         <Container>
-            <Circle/>
+            {/* <Circle/> */}
             <Image src={item.img} />
             <Info>
                 <Icon>
                     <ShoppingCartOutlined/>
                 </Icon>
                 <Icon>
-                    <Link to={`/product/${item._id}`}>
+                    <Link to={`/product/${item._id}`} style={linkStyle}>
                         <SearchOutlined/>
                     </Link>
                 </Icon>

@@ -5,6 +5,11 @@ import { Badge } from "@mui/material";
 import {mobile} from "../responsive"
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { logout } from "../redux/userRedux";
+import { useDispatch } from "react-redux";
+
+
+
 const Container = styled.div`
     height:60px;
 
@@ -91,8 +96,20 @@ const MenuItem = styled.div`
 `
 
 
+
+const linkStyle = {
+    textDecoration: "none",
+    color: 'black'
+};
+
 const Navbar = () => {
     const quantity = useSelector(state=>state.cart.quantity)
+    const user = useSelector(state=>state.user.currentUser);
+    const dispatch = useDispatch();
+
+    const handleLogout = ()=>{
+        dispatch(logout())
+    }
     
     return ( 
         <Container>
@@ -109,14 +126,18 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Logo>
-                        LAMA
-                    </Logo>
+                    <Link to="/" style={linkStyle}>
+                        <Logo>
+                            StyleHub
+                        </Logo>
+                    </Link>
                 </Center>
                 <Right>
-                    <MenuItem>Register</MenuItem>
-                    <MenuItem>Sign in</MenuItem>
-                    <Link to="/cart">
+                    {user ? <MenuItem>Hello {user.username}</MenuItem> : <Link to="/register" style={linkStyle}><MenuItem>Register</MenuItem></Link>  }
+                    {user ? <MenuItem onClick={handleLogout}>  Logout  </MenuItem>  : <Link to="/login" style={linkStyle}><MenuItem>Login</MenuItem></Link>  }
+                    {/* <MenuItem>Sign in</MenuItem> */}
+
+                    <Link to="/cart" style={linkStyle}>
                     <MenuItem>
                         <Badge badgeContent={quantity} color="primary">
                             <ShoppingCartCheckoutOutlined/>

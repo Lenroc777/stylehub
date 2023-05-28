@@ -3,7 +3,7 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import styled from "styled-components";
 import {mobile} from "../responsive"
-
+import { Link } from "react-router-dom";
 const Container = styled.div` 
     display:flex;
     margin-bottom: 30px;
@@ -88,15 +88,18 @@ const ContactItem = styled.div`
     display: flex;
     align-items: center;
 `
+const linkStyle = {
+    textDecoration: "none",
+    color: 'black'
+  };
 
 const Footer = () => {
     return ( 
         <Container>
             <Left>
-                <Logo>LAMA</Logo>
+                <Logo>StyleHub</Logo>
                 <Description>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad atque sunt corrupti dignissimos tempore molestias consequatur sit exercitationem sed reprehenderit, natus animi magni dolores possimus ipsam provident quae eius saepe repellat. Perspiciatis amet itaque sapiente quos repellendus!
-                </Description>
+                At StyleHub, we believe that fashion is an art form that empowers individuals to express their unique personalities and embrace their inner style icons. With an unwavering commitment to quality, innovation, and customer satisfaction, we curate a diverse collection of fashion-forward clothing and accessories that cater to every taste and occasion.                </Description>
                 <SocialContainer>
                     <SocialIcon color="#3b5999">
                         <Facebook />
@@ -112,14 +115,14 @@ const Footer = () => {
             <Center>
                 <Title>Useful links</Title>
                 <List>
-                    <ListItem>Home</ListItem>
-                    <ListItem>Cart</ListItem>
-                    <ListItem>Man fashion</ListItem>
-                    <ListItem>Woman fashion</ListItem>
-                    <ListItem>My account</ListItem>
-                    <ListItem>Order tracking</ListItem>
-                    <ListItem>Wishlist</ListItem>
-                    <ListItem>Terms and policy</ListItem>
+                    <ListItem><Link to="/" style={linkStyle}>Home</Link></ListItem>
+                    <ListItem><Link to="/cart" style={linkStyle}>Cart</Link></ListItem>
+                    <ListItem><Link to="/products/man" style={linkStyle}>Man fashion</Link></ListItem>
+                    <ListItem><Link to="/products/woman" style={linkStyle}>Woman fashion</Link></ListItem>
+                    <ListItem><Link to="/products/child" style={linkStyle}>Child fashion</Link></ListItem>
+                    <ListItem><Link to="/orders" style={linkStyle}>My orders</Link></ListItem>
+                    <ListItem><Link to="/" style={linkStyle}></Link>Wishlist</ListItem>
+                    <ListItem><Link to="/" style={linkStyle}>Terms and policy</Link></ListItem>
                 </List>
             </Center>
             <Right>
@@ -134,7 +137,7 @@ const Footer = () => {
                 </ContactItem>
                 <ContactItem>
                     <AlternateEmailIcon style={{marginRight: "10px"}}/>
-                    contact@email.com
+                    info@stylehub.com
                 </ContactItem>
             </Right>
         </Container>

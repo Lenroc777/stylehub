@@ -2,22 +2,22 @@ export const sliderItems = [
     {
         id: 1,
         img: "https://images.pexels.com/photos/9579283/pexels-photo-9579283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        title: "SUMMER SALE",
-        desc: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        title: "BE STYLISH",
+        desc: "Immerse yourself in the world of fashion with our curated collection of trendy and timeless pieces.",
         bg: "f5fafd",
     },
     {
         id: 2,
         img: "https://images.pexels.com/photos/5698082/pexels-photo-5698082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        title: "SUMMER SALE",
-        desc: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        title: "STAND OUT",
+        desc: "Step into the spotlight with our vibrant collection inspired by the latest fashion trends. ",
         bg: "f5fafd",
     },
     {
         id: 3,
         img: "https://images.pexels.com/photos/7060937/pexels-photo-7060937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         title: "SUMMER SALE",
-        desc: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        desc: "Get ready for the hottest deals of the season with our Summer Sale!",
         bg: "f5fafd",
     },
 ]
@@ -25,21 +25,21 @@ export const sliderItems = [
 export const categories = [
     {
         id: 1,
-        img: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        img: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         title: "Woman",
         cat: "woman",
     },
     {
         id: 2,
-        img: "https://images.pexels.com/photos/1936854/pexels-photo-1936854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        img: "https://images.pexels.com/photos/2896840/pexels-photo-2896840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         title: "Man",
         cat: "man",
     },
     {
         id: 3,
-        img: "https://images.pexels.com/photos/4066293/pexels-photo-4066293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        title: "shoes",
-        cat:"shoes",
+        img: "https://images.pexels.com/photos/1104007/pexels-photo-1104007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Child",
+        cat:"child",
     },
 
 ]

@@ -9,6 +9,10 @@ import StripeCheckout from "react-stripe-checkout";
 import { useEffect, useState } from "react";
 import { userRequest } from "../requestMethods";
 import { useNavigate } from "react-router";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { clearCart } from '../redux/cartRedux';
 
 const KEY = process.env.REACT_APP_STRIPE;
 
@@ -155,37 +159,123 @@ const Button = styled.button`
     background-color: black;
     color: white;
     font-weight: 600;
+    cursor: pointer;
+    &:disabled{
+        background-color: grey;
+        cursor: not-allowed;
+    }
 `
+const Error = styled.span`
+    color: red;
+`
+const linkStyle = {
+    textDecoration: "none",
+    color: 'black'
+  };
 
 const Cart = () => {
     const cart = useSelector(state=>state.cart)
+    const user = useSelector(state=>state.user.currentUser);
+    if(user) {
+        const userToken = user.accessToken
+    }
+        const [stripeToken, setStripeToken] = useState(null);
 
-    const [stripeToken, setStripeToken] = useState(null);
-
+    const dispatch = useDispatch();
     const navigate = useNavigate();
 
     const onToken = (token) => {
         setStripeToken(token);
     }
 
-    useEffect(()=>{
-        const makeRequest = async ()=>{
-            try {
-                const res = await userRequest.post("/checkout/payment", {
-                    tokenId: stripeToken.id,
-                    amount: cart.total * 100,
-                })
-                navigate("/success", {data:res.data})
-            } catch (error) {
+    // console.log(cart)
+    // console.log(user.accessToken)
+
+    // useEffect(()=>{
+    //     const makeRequest = async ()=>{
+    //         try {
+
+    //             const res = await userRequest.post("/checkout/payment", { 
+    //                 tokenId: stripeToken.id,
+    //                 amount: cart.total * 100,
+    //             })
+
+
+    //             if (stripeToken) {
+    //                 const res = await userRequest.post("/orders", {
+    //                   userId: user._id, // ID aktualnego użytkownika
+    //                   products: cart.products.map(product => ({
+    //                     productId: product._id,
+    //                     quantity: product.quantity
+    //                   })),
+    //                   amount: cart.total,
+    //                   address: "Adres dostawy", // Adres dostawy pobrany z formularza
+    //                   status: "pending"
+    //                 });
+          
+    //                 navigate("/success", {
+    //                   state: {
+    //                     stripeData: res.data,
+    //                     products: cart,
+    //                   },
+    //                 });
+    //               }
+    //         } catch (error) {
                 
-            }
+    //         }
+    //     }
+    //     stripeToken && cart.total > 0 &&  makeRequest();
+    // }, [stripeToken, cart.total, navigate])
+
+
+    useEffect(() => {
+        const makeRequest = async () => {
+          try {
+            const paymentRes = await userRequest.post("/checkout/payment", {
+              tokenId: stripeToken.id,
+              amount: cart.total * 100,
+            });
+
+            // const orderRes = await userRequest.post("/orders",
+            // {
+            //         userId: user._id, // ID aktualnego użytkownika
+            //         products: cart.products.map(product => ({
+            //           productId: product._id,
+            //           quantity: product.quantity
+            //         })),
+            //         amount: cart.total,
+            //         address: "Adres dostawy", // Adres dostawy pobrany z formularza
+            //         status: "pending"
+            //       },
+
+            //       {
+            //         headers: {
+            //             token: "Bearer "+user.accessToken
+            //         }
+            //       }
+            // )
+              navigate("/success", {
+                state: {
+                  stripeData: paymentRes.data,
+                  products: cart,
+                },
+              });
+            
+          } catch (error) {
+            console.log(error);
+          }
+        };
+      
+        if (stripeToken && cart.total > 0) {
+          makeRequest();
         }
-        stripeToken && cart.total > 0 &&  makeRequest();
-    }, [stripeToken, cart.total, navigate])
+      }, [stripeToken, cart.total, navigate]);
+      
+      const quantity = useSelector(state=>state.cart.quantity)
 
-    console.log(stripeToken)
-
-    
+    const handleClearCart = () => {
+        dispatch(clearCart());
+    }
 
     return ( 
         <Container>
@@ -194,12 +284,14 @@ const Cart = () => {
             <Wrapper>
                 <Tittle>Your bag</Tittle>
                 <Top>
-                    <TopButton>Continue shopping</TopButton>
+                    <Link to="/products" style={linkStyle}>
+                        <TopButton>Continue shopping</TopButton>
+                    </Link>
                     <TopTexts>
-                        <TopText>Shopping bag(2)</TopText>
+                        <TopText>Shopping bag({quantity})</TopText>
                         <TopText>Your watchlist</TopText>
                     </TopTexts>
-                    <TopButton type="filled">Checkout now</TopButton>
+                    <TopButton type="filled" onClick={handleClearCart}>Clear cart</TopButton>
                 </Top>
                 <Bottom>
                     <Info>
@@ -207,17 +299,17 @@ const Cart = () => {
                             <ProductDetail>
                                 <Image src={product.img}/>
                                 <Details>
-                                    <ProductName><b>Product:</b> {product.title} </ProductName>
-                                    <ProductId><b>ID:</b>{product._id}</ProductId>
+                                    <ProductName><b>Product: </b> {product.title} </ProductName>
+                                    <ProductId><b>ID: </b>{product._id}</ProductId>
                                     <ProductColor color={product.color}></ProductColor>
-                                    <ProductSize><b>Size:</b>{product.size}</ProductSize>
+                                    <ProductSize><b>Size: </b>{product.size}</ProductSize>
                                 </Details>
                             </ProductDetail>
                             <PriceDetail>
                                 <ProductAmountContainer>
-                                    <Add/>
-                                    <ProductAmount>{product.quantity}</ProductAmount>
-                                    <Remove/>
+                                    
+                                    <ProductAmount>x{product.quantity}</ProductAmount>
+                                    
                                 </ProductAmountContainer>
                                 <ProductPrice>$ {product.price*product.quantity}</ProductPrice>
                             </PriceDetail>
@@ -248,7 +340,8 @@ const Cart = () => {
                             stripeKey={KEY}
                             token={onToken}
                         >
-                            <Button>CHECKOUT NOW</Button>
+                            <Button disabled={user ? false : true}>CHECKOUT NOW</Button>
+                            {!user && <Error> You must be logged in to continue </Error>}
                         </StripeCheckout>
                     </Summary>
                 </Bottom>

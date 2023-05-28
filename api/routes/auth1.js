@@ -34,7 +34,7 @@ router.post("/register", async (req, res) => {
 });
 
 //LOGIN
-router.get("/login", async (req, res)=>{
+router.post("/login", async (req, res)=>{
     try{
         //checking if username exist in database
         const user = await User.findOne({username: req.body.username})
@@ -42,17 +42,26 @@ router.get("/login", async (req, res)=>{
         if(!user) return res.status(401).json("Wrong credentials")
         
         //comparing entered password with a password in the database 
-        const validPassword = await CryptoJS.AES.decrypt(req.body.password, process.env.JWT_KEY).toString();
-        if(validPassword===user.password) return res.status(401).json("Wrong credentials")
+        // const validPassword = await CryptoJS.AES.decrypt(req.body.password, process.env.JWT_KEY).toString();
+        const validPassword = await CryptoJS.AES.decrypt(user.password, process.env.JWT_KEY).toString();
+        console.log('user passwd', validPassword, 'req passwd', req.body.password)
+        // console.log(req.body.password)
+        if(validPassword===user.password) {
+            const accessToken = jwt.sign({
+                id: user._id,
+                isAdmin: user.isAdmin,
+            }, process.env.JWT_KEY, {expiresIn: "3d"})
+    
+            const {password, ...others} = user._doc;
+    
+            res.status(200).json({...others, accessToken});
+            
+        }else{
+            return res.status(401).json("Wrong credentials")
+            
+        }
 
-        const accessToken = jwt.sign({
-            id: user._id,
-            isAdmin: user.isAdmin,
-        }, process.env.JWT_KEY, {expiresIn: "3d"})
-
-        const {password, ...others} = user._doc;
-
-        res.status(200).json({...others, accessToken});
+        
 
     }catch(err){
         res.status(500).json(err)

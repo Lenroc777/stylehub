@@ -49,6 +49,9 @@ const Option = styled.option``
 const ProductList = () => {
     const location = useLocation();
     const cat = (location.pathname.split("/")[2])
+    // if(cat == "" || cat == " " || cat == undefined){
+    //     cat=null;
+    // }
     const [filters, setFilters] = useState({})
     const [sort, setSort] = useState("newest")
     const handleFilters = (e)=>{
@@ -63,7 +66,7 @@ const ProductList = () => {
         <Container>
             <Navbar/>
             <Announcement/>
-            <Title>{cat}</Title>
+            {cat ? <Title>{cat}</Title> : <Title>All products</Title>}
             <FilterContainer>
                 <Filter>
                     <FilterText>Products</FilterText>

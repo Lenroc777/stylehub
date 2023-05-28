@@ -80,6 +80,7 @@ const FilterColor = styled.div`
     border-radius: 50%;
     margin: 0px 5px;
     cursor: pointer;
+    border: none;
 `
 const FilterSize = styled.select`
     margin-left: 10px;
@@ -147,16 +148,20 @@ const Product = () => {
             try {
                 const res = await publicRequest.get("/products/find/"+id);
                 setProduct(res.data);
+                setColor(res.data.color[0])
+                setSize(res.data.size[0])
             } catch (error) {
                 console.log(error)
             }
         }
         
         getProduct();
-        console.log(Object.keys(product));
-        console.log(product.color);
     }, [id])
 
+    // useEffect(()=>{
+    //     setColor(product.color[0])
+    //     setSize(product.size[0])
+    // }, [product])
     const handleQuantity = (type) =>{
         if(type === "desc"){
             quantity > 1 && setQuantity(quantity-1)
@@ -168,6 +173,11 @@ const Product = () => {
     const handleClick = ()=>{
         dispatch(addProduct({...product, quantity, color, size}))
     }
+
+    // const selectedSize = product.size[0];
+    // setColor(product.color[0])
+    // setSize(product.size[0])
+    // if(product) setSize(product.size[0])
 
     return ( 
         <Container>
@@ -186,7 +196,7 @@ const Product = () => {
                             <FilterTitle>
                                 Color
                             </FilterTitle>
-                            {product && product.color && product.color.map((c) => <FilterColor color={c} key={c} onClick={()=>setColor(c)}/>)}
+                            {product && product.color && product.color.map((c) => <FilterColor color={c} key={c} onClick={()=>setColor(c)} style={{ border: color === c ? "2px solid teal" : "none" }} />)}
 
                             {
                                 // product.color.map((c)=>(<FilterColor color={c} key={c}/>))
@@ -199,7 +209,7 @@ const Product = () => {
                             
                             {/* <FilterSizeOption>XS</FilterSizeOption> */}
                             {product.size && product.size.map((s)=>{
-                                return <FilterSizeOption key={s} >{s}</FilterSizeOption>
+                                return <FilterSizeOption key={s}>{s}</FilterSizeOption>
                             })}
                             </FilterSize>
                         </Filter>
