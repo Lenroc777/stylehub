@@ -77,9 +77,11 @@ const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 20px;
     ${mobile({
         justifyContent: "center",
-        flex: 2
+        flex: 2,
+        paddingRight: "0px"
     })}
 `
 const MenuItem = styled.div`
@@ -91,16 +93,17 @@ const MenuItem = styled.div`
 
     ${mobile({
         fontSize: "12px",
-        marginLeft: "10px"
+        marginLeft: "10px",
+        maxWidth: "30%",
     })}
 `
-
-
 
 const linkStyle = {
     textDecoration: "none",
     color: 'black'
 };
+
+
 
 const Navbar = () => {
     const quantity = useSelector(state=>state.cart.quantity)

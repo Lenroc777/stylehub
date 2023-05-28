@@ -5,11 +5,24 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Container = styled.div`
-    padding: 20px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+ `
+const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+ `
+
+const Title = styled.h1`
+    font-size: 48px;
+    padding: 20px;
+    padding-left: 5%;
 `
 
 const Products = ({cat, filters, sort}) => {
@@ -53,15 +66,19 @@ const Products = ({cat, filters, sort}) => {
             })
         }
     }, [sort])
-
+    console.log(products)
     return ( 
         <Container>
-            {cat ? filteredProducts.map(item=>(
-                <Product item={item} key={item.id} />
-            )) : products.slice(0, 8).map(item=>(
-                <Product item={item} key={item.id} />
-            ))}
+            <Title>Products</Title>
+            <Wrapper>
 
+            {cat ? filteredProducts.map(item=>(
+                <Product item={item} key={item._id} />
+                )) : products.slice(0, 8).map(item=>(
+                    <Product item={item} key={item._id} />
+                    ))}
+
+            </Wrapper>
         </Container>
      );
 }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import {mobile} from "../responsive"
+import {mobile, laptop} from "../responsive"
 import { useSelector } from "react-redux";
 import StripeCheckout from "react-stripe-checkout";
 import { useEffect, useState } from "react";
@@ -42,6 +42,12 @@ const TopButton = styled.button`
     border: ${props=>props.type === "filled" && "none" };
     background-color: ${props=>props.type === "filled" ? "black" : "transparent" };
     color: ${props=>props.type === "filled" && "white" };
+
+    &:hover{
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
 `
 const TopTexts = styled.div`
     ${mobile({
@@ -60,11 +66,17 @@ const Bottom = styled.div`
     justify-content: space-between;
 
     ${mobile({
-        flexDirection: "column"
+        flexDirection: "column",
+    })}
+    ${laptop({
+        flexDirection: "column",
     })}
 `
 const Info = styled.div`
     flex: 3;
+
+    
+
 `
 const Product = styled.div`
     display: flex;
@@ -139,6 +151,11 @@ const Summary = styled.div`
     border-radius: 10px;
     padding: 20px;
     height: 50vh;
+
+    ${laptop({
+        marginTop: "20px",
+    })}
+
 `
 
 const SummaryTitle = styled.h1`
@@ -163,6 +180,11 @@ const Button = styled.button`
     &:disabled{
         background-color: grey;
         cursor: not-allowed;
+    }
+
+    &:hover{
+        transform: scale(1.05);
+        transition: .5s;
     }
 `
 const Error = styled.span`

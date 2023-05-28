@@ -1,11 +1,14 @@
 import styled from "styled-components"
-import {mobile} from "../responsive"
+import {mobile, laptop} from "../responsive"
 import { Link } from "react-router-dom"
 const Container = styled.div`
     flex: 1;
     margin: 3px;
     height: 70vh;
     position: relative;
+
+    
+
     `
     const Image = styled.img`
     width: 100%;
@@ -26,10 +29,17 @@ const Info = styled.div`
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, .25);
+
+    &:hover{
+        background: rgba(255, 255, 255, .05);
+        transition: .5s
+    }
+
 `
 const Title = styled.h1`
     color: white;    
     margin-bottom: 20px;
+    font-size: 42px;
 `
 const Button = styled.button`
     border: none;
@@ -37,6 +47,8 @@ const Button = styled.button`
     background-color: white;
     color: gray;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
 `
 
 const CategoryItem = ({item}) => {

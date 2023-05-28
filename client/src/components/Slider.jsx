@@ -3,7 +3,7 @@ import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { useState } from 'react';
 import { sliderItems } from '../data';
-import {mobile} from '../responsive'
+import {mobile, tablet} from '../responsive'
 import { Link } from "react-router-dom";
 const Container = styled.div`
     width: 100%;
@@ -13,8 +13,13 @@ const Container = styled.div`
     overflow: hidden;
 
     ${mobile({
-        display: "none"
+        display: "none" 
     })}
+    ${tablet({
+        height: "90vh",
+        marginBottom: "60px",
+    })}
+
 `
 const Wrapper = styled.div`
     height: 100%;
@@ -27,20 +32,43 @@ const Slide = styled.div`
     height: 100vh;
     display: flex;
     align-items: center;
+    ${tablet({
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+    })}
 `
 const ImgContainer = styled.div`
     height: 100%;
     flex: 1;
+    ${tablet({
+        display: "flex",
+        justifyContent: "center"
+    })}
 `
 const InfoContainer = styled.div`
     flex: 1;
     padding: 50px;
+    ${tablet({
+        position: "absolute",
+        background: "rgba(255, 255, 255, .5)",
+        maxWidth: "40vw"
+    })}
 `
 const Image = styled.img`
     height: 80%;
+    ${tablet({
+        height: "100%",
+        
+    })}
+
 `
 const Title = styled.h1`
     font-size: 70px;
+
+    ${tablet({
+        fontSize: "50px"
+    })}
 `
 const Description = styled.p`
     margin: 50px 0px;
@@ -53,6 +81,17 @@ const Button = styled.button`
     font-size: 20px;
     background-color: transparent;
     cursor: pointer;
+
+    &:hover{
+        transform: scale(1.2);
+        transition: .4s;
+    }
+
+    ${tablet({
+        background: "rgba(0, 0, 0, 1)",
+        color: "white",
+    })}
+    
 `
 
 const Arrow = styled.div`
