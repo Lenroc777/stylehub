@@ -31,7 +31,7 @@ const ImgContainer = styled.div`
 const Image = styled.img`
     width: 100%;
     height: 90vh;
-    object-fit: cover;
+    object-fit: contain;
 
     ${mobile({
         height: "40vh"
@@ -198,10 +198,7 @@ const Product = () => {
                             </FilterTitle>
                             {product && product.color && product.color.map((c) => <FilterColor color={c} key={c} onClick={()=>setColor(c)} style={{ border: color === c ? "2px solid teal" : "none" }} />)}
 
-                            {
-                                // product.color.map((c)=>(<FilterColor color={c} key={c}/>))
-                            }
-                            
+                         
                         </Filter>
                         <Filter>
                             <FilterTitle>Size</FilterTitle>
