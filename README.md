@@ -46,9 +46,9 @@ Create a .env file in the client directory and set the environment variable:
 - REACT_APP_STRIPE= Your Stripe public API key.
 
 4. Start the server and the client separately:
--in the api directory:
+- in the api directory:
 ```npm start```
--in the client directory:
+- in the client directory:
 ```npm start```
 The server will run on http://localhost:5000, and the client will run on http://localhost:3000.
 
