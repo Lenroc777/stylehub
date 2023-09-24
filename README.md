@@ -38,12 +38,12 @@ npm install
 3. Configure environment variables:
 
 Create a .env file in the api directory and set the following environment variables:
-MONGO_URL= Your MongoDB connection URI.
-JWT_KEY= A secret key for JWT token generation.
-STRIPE_KEY= Your Stripe secret API key.
+- MONGO_URL= Your MongoDB connection URI.
+- JWT_KEY= A secret key for JWT token generation.
+- STRIPE_KEY= Your Stripe secret API key.
 
 Create a .env file in the client directory and set the environment variable:
-REACT_APP_STRIPE= Your Stripe public API key.
+- REACT_APP_STRIPE= Your Stripe public API key.
 
 4. Start the server and the client separately:
 -in the api directory:
