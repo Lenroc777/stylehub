@@ -1,0 +1,444 @@
+[{
+  "_id": {
+    "$oid": "64477cde3a55b56d216e77c6"
+  },
+  "userId": "644644ded533b04e8d71dec9",
+  "products": [
+    {
+      "productId": "21asdq2",
+      "quantity": 2,
+      "_id": {
+        "$oid": "64477cde3a55b56d216e77c7"
+      }
+    },
+    {
+      "productId": "3a32dq2",
+      "quantity": 1,
+      "_id": {
+        "$oid": "64477cde3a55b56d216e77c8"
+      }
+    }
+  ],
+  "amount": 50,
+  "address": "USA",
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-03-25T07:10:22.560Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-25T07:10:22.560Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6473525a300d5d61aff90368"
+  },
+  "userId": "64730f8b9f8e2eb149efa82c",
+  "products": [
+    {
+      "productId": "64465372c4c8e21a377990fa",
+      "quantity": 1,
+      "_id": {
+        "$oid": "6473525a300d5d61aff90369"
+      }
+    },
+    {
+      "productId": "644655f78ed23d09ebbe2620",
+      "quantity": 1,
+      "_id": {
+        "$oid": "6473525a300d5d61aff9036a"
+      }
+    }
+  ],
+  "amount": 110,
+  "address": "Adres dostawy",
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-05-28T13:08:42.757Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T13:08:42.757Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6474608643f31d461ce13625"
+  },
+  "userId": "64730f8b9f8e2eb149efa82c",
+  "products": [
+    {
+      "productId": "64465372c4c8e21a377990fa",
+      "quantity": 1,
+      "_id": {
+        "$oid": "6474608643f31d461ce13626"
+      }
+    }
+  ],
+  "amount": 160,
+  "address": {
+    "city": "Test",
+    "country": "Poland",
+    "line1": "Test 1",
+    "line2": null,
+    "postal_code": "123",
+    "state": null
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-05-29T08:21:26.643Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-29T08:21:26.643Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64477cae3a55b56d216e77c2"
+  },
+  "userId": "644644ded533b04e8d71dec9",
+  "products": [
+    {
+      "productId": "21asdq2",
+      "quantity": 2,
+      "_id": {
+        "$oid": "64477cae3a55b56d216e77c3"
+      }
+    },
+    {
+      "productId": "3a32dq2",
+      "quantity": 1,
+      "_id": {
+        "$oid": "64477cae3a55b56d216e77c4"
+      }
+    }
+  ],
+  "amount": 50,
+  "address": "USA",
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-04-25T07:09:34.569Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-25T07:09:34.569Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647338400e60982f573d47a9"
+  },
+  "userId": "64730f8b9f8e2eb149efa82c",
+  "products": [
+    {
+      "productId": "21asdq2",
+      "quantity": 2,
+      "_id": {
+        "$oid": "647338400e60982f573d47aa"
+      }
+    },
+    {
+      "productId": "3a32dq2",
+      "quantity": 1,
+      "_id": {
+        "$oid": "647338400e60982f573d47ab"
+      }
+    }
+  ],
+  "amount": 50,
+  "address": "USA",
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-05-28T11:17:20.896Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T11:17:20.896Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647364856f0fc92346345225"
+  },
+  "userId": "64730f8b9f8e2eb149efa82c",
+  "products": [
+    {
+      "productId": "64465372c4c8e21a377990fa",
+      "quantity": 1,
+      "_id": {
+        "$oid": "647364856f0fc92346345226"
+      }
+    },
+    {
+      "productId": "644655f78ed23d09ebbe2620",
+      "quantity": 1,
+      "_id": {
+        "$oid": "647364856f0fc92346345227"
+      }
+    }
+  ],
+  "amount": 110,
+  "address": {
+    "city": "Test",
+    "country": "Poland",
+    "line1": "Test 1",
+    "line2": null,
+    "postal_code": "123",
+    "state": null
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-05-28T14:26:13.460Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T14:26:13.460Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6473385f0e60982f573d47ad"
+  },
+  "userId": "64730f8b9f8e2eb149efa82c",
+  "products": [
+    {
+      "productId": "21asdq2",
+      "quantity": 2,
+      "_id": {
+        "$oid": "6473385f0e60982f573d47ae"
+      }
+    },
+    {
+      "productId": "3a32dq2",
+      "quantity": 1,
+      "_id": {
+        "$oid": "6473385f0e60982f573d47af"
+      }
+    }
+  ],
+  "amount": 50,
+  "address": "USA",
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-05-28T11:17:51.424Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T11:17:51.424Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64734d3770c2989ec6ad6590"
+  },
+  "userId": "64730f8b9f8e2eb149efa82c",
+  "products": [
+    {
+      "productId": "21asdq2",
+      "quantity": 2,
+      "_id": {
+        "$oid": "64734d3770c2989ec6ad6591"
+      }
+    },
+    {
+      "productId": "3a32dq2",
+      "quantity": 1,
+      "_id": {
+        "$oid": "64734d3770c2989ec6ad6592"
+      }
+    }
+  ],
+  "amount": 50,
+  "address": "USA",
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-05-28T12:46:47.826Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T12:46:47.826Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647355f76f0fc9234634521f"
+  },
+  "userId": "64730f8b9f8e2eb149efa82c",
+  "products": [
+    {
+      "productId": "64465372c4c8e21a377990fa",
+      "quantity": 1,
+      "_id": {
+        "$oid": "647355f76f0fc92346345220"
+      }
+    },
+    {
+      "productId": "644655f78ed23d09ebbe2620",
+      "quantity": 1,
+      "_id": {
+        "$oid": "647355f76f0fc92346345221"
+      }
+    }
+  ],
+  "amount": 110,
+  "address": {
+    "city": "Test",
+    "country": "Poland",
+    "line1": "Test 1",
+    "line2": null,
+    "postal_code": "123",
+    "state": null
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-05-28T13:24:07.976Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T13:24:07.976Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64733801c403628590d16bd4"
+  },
+  "userId": "64730f8b9f8e2eb149efa82c",
+  "products": [
+    {
+      "productId": "21asdq2",
+      "quantity": 2,
+      "_id": {
+        "$oid": "64733801c403628590d16bd5"
+      }
+    },
+    {
+      "productId": "3a32dq2",
+      "quantity": 1,
+      "_id": {
+        "$oid": "64733801c403628590d16bd6"
+      }
+    }
+  ],
+  "amount": 50,
+  "address": "USA",
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-05-28T11:16:17.064Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T11:16:17.064Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647355d76f0fc9234634521a"
+  },
+  "userId": "64730f8b9f8e2eb149efa82c",
+  "products": [
+    {
+      "productId": "64465372c4c8e21a377990fa",
+      "quantity": 1,
+      "_id": {
+        "$oid": "647355d76f0fc9234634521b"
+      }
+    },
+    {
+      "productId": "644655f78ed23d09ebbe2620",
+      "quantity": 1,
+      "_id": {
+        "$oid": "647355d76f0fc9234634521c"
+      }
+    }
+  ],
+  "amount": 110,
+  "address": {
+    "city": "Test",
+    "country": "Poland",
+    "line1": "Test 1",
+    "line2": null,
+    "postal_code": "123",
+    "state": null
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-05-28T13:23:35.278Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T13:23:35.278Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6473a1bc8948ed3d5e12af0c"
+  },
+  "userId": "64730f8b9f8e2eb149efa82c",
+  "products": [
+    {
+      "productId": "644655f78ed23d09ebbe2620",
+      "quantity": 1,
+      "_id": {
+        "$oid": "6473a1bc8948ed3d5e12af0d"
+      }
+    },
+    {
+      "productId": "644655f78ed23d09ebbe2620",
+      "quantity": 1,
+      "_id": {
+        "$oid": "6473a1bc8948ed3d5e12af0e"
+      }
+    }
+  ],
+  "amount": 60,
+  "address": {
+    "city": "Test",
+    "country": "Poland",
+    "line1": "Test 1",
+    "line2": null,
+    "postal_code": "123",
+    "state": null
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-05-28T18:47:24.298Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-28T18:47:24.298Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "651033272849fcc96140131f"
+  },
+  "userId": "64f5ff0e872b8ceed582ba40",
+  "products": [
+    {
+      "productId": "64465c5a85db93f204418c7b",
+      "quantity": 1,
+      "_id": {
+        "$oid": "651033272849fcc961401320"
+      }
+    }
+  ],
+  "amount": 35,
+  "address": {
+    "city": "Test",
+    "country": "Poland",
+    "line1": "Test 1",
+    "line2": null,
+    "postal_code": "123",
+    "state": null
+  },
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-09-24T13:01:27.434Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-24T13:01:27.434Z"
+  },
+  "__v": 0
+}]

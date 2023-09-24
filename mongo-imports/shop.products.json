@@ -1,0 +1,212 @@
+[{
+  "_id": {
+    "$oid": "6473c9f9c0543763e6536f83"
+  },
+  "title": "Sunglasses",
+  "desc": "Step into the world of timeless elegance and sun-soaked glamour with our exquisite collection of sunglasses. Elevate your style and protect your eyes with our stunning range of sunglasses designed to add a touch of sophistication to every ensemble.",
+  "img": "https://assets.glasses.com/is/image/Glasses/8056597382700_shad_fr.png?impolicy=SEO_4x3",
+  "categories": [
+    "accessories",
+    "woman"
+  ],
+  "size": [
+    "one-size"
+  ],
+  "color": [
+    "blue",
+    "black"
+  ],
+  "price": 35,
+  "createdAt": {
+    "$date": "2023-04-24T10:39:22.292Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T10:39:22.292Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6474559718feca7fd53c350f"
+  },
+  "title": "Elegant slippers",
+  "desc": "Experience unmatched comfort and effortless style with our collection of men's slippers. Crafted with the finest materials and attention to detail, these slippers offer a cozy retreat for your feet. Slip into pure relaxation as you lounge around the house or unwind after a long day.",
+  "img": "https://media.istockphoto.com/id/172417586/photo/elegant-black-leather-shoes.jpg?s=612x612&w=0&k=20&c=c_tTljwbu2m0AGxwb27NxCgG0Y2Cv-C4v8q6V36RYbw=",
+  "categories": [
+    "shoes",
+    "man"
+  ],
+  "size": [
+    "41",
+    "42",
+    "43",
+    "44",
+    "45",
+    "46"
+  ],
+  "color": [
+    "black",
+    "brown",
+    "dark-blue"
+  ],
+  "price": 100
+},
+{
+  "_id": {
+    "$oid": "64465c5a85db93f204418c7b"
+  },
+  "title": "Jeans shorts",
+  "desc": "Experience the unparalleled softness and superior quality of our carefully selected fabrics, ensuring a luxurious feel against your skin. Each stitch is thoughtfully placed, resulting in a flawless fit that flatters your silhouette and exudes a sense of understated elegance.",
+  "img": "https://media.istockphoto.com/id/695708092/photo/one-short-blue-jeans-isolated-on-white.jpg?s=612x612&w=0&k=20&c=c5cxDVM8VyfgrXTL84PBRkEZbuiWl-495aGxu_iQLFc=",
+  "categories": [
+    "trousers",
+    "woman"
+  ],
+  "size": [
+    "XS",
+    "M",
+    "L",
+    "XL"
+  ],
+  "color": [
+    "blue",
+    "black"
+  ],
+  "price": 35,
+  "createdAt": {
+    "$date": "2023-04-24T10:39:22.292Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T10:39:22.292Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64465372c4c8e21a377990fa"
+  },
+  "title": "High heels",
+  "desc": "Discover the allure of High Heel Shoes: Unleash your inner confidence and elevate your style with our stunning collection of High Heel Shoes. These captivating footwear essentials are meticulously designed to make heads turn and hearts skip a beat.",
+  "img": "https://media.istockphoto.com/id/949599044/photo/red-female-shoes-on-a-white-background.jpg?s=612x612&w=0&k=20&c=0eHpEsU6hWNIEDOF8WXEmrPQRtXN4GxM6XDhvQmXmn4=",
+  "categories": [
+    "shoes",
+    "woman"
+  ],
+  "size": [
+    "38",
+    "39",
+    "40"
+  ],
+  "color": [
+    "white",
+    "red",
+    "grey"
+  ],
+  "price": 80,
+  "createdAt": {
+    "$date": "2023-04-24T10:01:22.662Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T10:01:22.662Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6474566518feca7fd53c3510"
+  },
+  "title": "Leather belt",
+  "desc": "Elevate your everyday style with our brown leather belt. Crafted from high-quality, genuine leather, this belt offers both durability and timeless elegance. The rich brown color adds a touch of sophistication to any outfit, making it a versatile accessory for both formal and casual occasions. ",
+  "img": "https://st3.depositphotos.com/24883180/36230/i/600/depositphotos_362309566-stock-photo-formal-studio-product-shot-men.jpg",
+  "categories": [
+    "accessories",
+    "man"
+  ],
+  "size": [
+    "88",
+    "90",
+    "96"
+  ],
+  "color": [
+    "brown",
+    "blue",
+    "grey"
+  ],
+  "price": 38,
+  "createdAt": {
+    "$date": "2023-04-24T10:01:22.662Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T10:01:22.662Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "644655f78ed23d09ebbe2620"
+  },
+  "title": "Regular tshirt",
+  "desc": "Introducing the Essence of Effortless Style: Unveil the versatility and timeless appeal of our classic T-Shirt collection. Embrace the perfect blend of comfort and chic as you slip into our meticulously crafted and effortlessly stylish T-Shirts.",
+  "img": "https://media.istockphoto.com/id/482948743/photo/blank-white-t-shirt-front-with-clipping-path.jpg?s=612x612&w=0&k=20&c=cJG_B0mOIG42FKtC_rqIeZCClYOj7UCFNNs9WTkYEEE=",
+  "categories": [
+    "tshirt",
+    "woman"
+  ],
+  "size": [
+    "M",
+    "S",
+    "XS"
+  ],
+  "color": [
+    "red",
+    "black",
+    "white"
+  ],
+  "price": 15,
+  "createdAt": {
+    "$date": "2023-04-24T10:12:07.834Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-24T10:12:33.628Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6474519f18feca7fd53c350b"
+  },
+  "title": "Rolex Wirst Watch",
+  "desc": "The Rolex watch is an epitome of luxury and precision. Crafted with meticulous attention to detail, it showcases the perfect fusion of elegance and functionality. From its iconic design to its exceptional timekeeping capabilities, the Rolex watch stands as a symbol of status and craftsmanship",
+  "img": "https://media.istockphoto.com/id/531725359/photo/rolex-wrist-watch.jpg?s=612x612&w=0&k=20&c=OqHPFuSIlt6qKDKOHfTf8jtEWcknOHgaR5A6NkJg1kc=",
+  "categories": [
+    "man",
+    "accessories"
+  ],
+  "size": [
+    "one-size"
+  ],
+  "color": [
+    "gold",
+    "silver"
+  ],
+  "price": 399,
+  "inStock": true
+},
+{
+  "_id": {
+    "$oid": "6474530b18feca7fd53c350c"
+  },
+  "title": "Stylish Sunglasses",
+  "desc": "Discover the perfect blend of style and protection with our collection of men's sunglasses. Designed to complement your individuality, these sunglasses exude confidence and sophistication. Whether you're strolling along the beach or exploring the city, our sunglasses provide optimal UV protection while enhancing your visual clarity",
+  "img": "https://media.istockphoto.com/id/1081398784/photo/sunglass-on-white-background.jpg?s=612x612&w=0&k=20&c=3gwUtbgJcRcjB3U60IpRhGNYFSNVYK6QfgrlhVVgK9w=",
+  "categories": "accessories, man",
+  "size": [
+    "one-size"
+  ],
+  "color": [
+    "black",
+    "white"
+  ],
+  "price": 40,
+  "inStock": true
+}]
