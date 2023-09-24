@@ -1,4 +1,4 @@
-<h1> SyleHub - E-commerce Website 🛍️ </h1>
+# SyleHub - E-commerce Website 🛍️
 
 Welcome to SyleHub, your one-stop destination for all your fashion needs! SyleHub is a modern e-commerce website built using React, Styled Components, Node.js with Express, and MongoDB. With SyleHub, users can explore a wide range of clothing and accessories, add items to their shopping cart, and complete orders. We've integrated Stripe for seamless payment processing and use JWT for authentication to ensure a secure shopping experience.
 **Website is Responsive:** SyleHub is designed to provide an optimal viewing and shopping experience across a wide range of devices, including desktops, tablets, and smartphones.
