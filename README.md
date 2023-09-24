@@ -101,3 +101,69 @@ This project was developed as part of a learning experience and was inspired by 
 - **YouTube Tutorial**: [React e-commerce app](https://www.youtube.com/watch?v=c1xTDSIXit8)
 
 Feel free to check out the tutorial to gain a deeper understanding of the concepts and technologies used in this project.
+
+## Screenshots 📸
+### Homepage
+#### Carousel
+Desktop: 
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/bdf2f28b-f871-4d31-88b7-f3cc0e276d8e)
+Mobile:  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/556463d4-d811-4da9-8583-6ab004caa158)
+
+#### Categories
+Desktop:
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/8aa87898-2dae-42d4-af55-711e0f23894b)
+Mobile:  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/23364dd6-c701-49fc-84d8-e514abf8d02d)
+
+#### Products
+Desktop:
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/cd9a729c-6424-4657-a985-bf0836d63310)
+Mobile:  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/eb218df7-2b18-4af5-9ff7-c5cbeb5a5ec1)
+
+#### Newsletter and footer
+Desktop:
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/30ce4c7c-fb07-41e5-b8c0-838b77cf5522)
+Mobile:  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/ef6a4f35-aba3-49ff-abdb-150ad3f57740)
+
+### Products
+#### All products
+Desktop:
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/e2cdc30e-8b60-4311-8018-fe2c6bb6d06d)
+Mobile:  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/ce14254a-dbb2-4b74-9b1a-6b1878b37a38)
+
+#### Products from category "woman" with example filters and sort
+Desktop: 
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/b6fbaac5-c81a-4e97-a2db-f1724aec4381)
+Mobile:  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/ce53ded9-6b48-4c97-a836-e6ca7a990f87)
+
+#### Single product page
+Desktop:
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/35029fae-6b19-4593-b7fc-b5d1add050ff)
+
+Mobile:  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/d9c95874-21f2-4749-ab72-d44b308ea79f)
+
+### Cart
+Desktop:
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/6d9c9da8-97d1-44c2-98fe-7c39bdb62fb1)
+Mobile:  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/af54db17-c628-488c-babc-3328cbdeeed5)
+
+### Registration and login page
+#### Register
+Desktop:
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/632111ba-f63d-4121-9e9a-4286592a17c3)
+Mobile:  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/68641027-705f-4a64-9dae-e39ac1438ec6)
+
+#### Login
+Desktop:
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/b332fba2-24bc-47a8-a83f-d2ae89c9658c)
+Mobile:  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/2ecd4a2e-eaec-484e-90fd-2b0afdc8d5f0)
+
