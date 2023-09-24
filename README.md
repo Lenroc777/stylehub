@@ -28,10 +28,12 @@ Before you can run SyleHub on your local machine, you'll need to have the follow
    ```git clone https://github.com/Lenroc777/stylehub.git```
 
 2. Install the required npm packages for both the server and client:
-```cd client
+```
+cd client
 npm install
 cd ../api
-npm install```
+npm install
+```
 
 3. Configure environment variables:
 
