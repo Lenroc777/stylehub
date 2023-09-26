@@ -106,89 +106,90 @@ Feel free to check out the tutorial to gain a deeper understanding of the concep
 ### Homepage
 #### Carousel
 Desktop: 
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/bdf2f28b-f871-4d31-88b7-f3cc0e276d8e)
-Mobile:  
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/78732516-1ba8-4aaf-8cc5-01ebec50ccca)
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/328d7d7c-3b22-41b3-a6e5-5de34f04a881)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/b163f354-4f34-4b6c-bfe9-958fdf231417)  
+
+Mobile (medium and small):  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/78732516-1ba8-4aaf-8cc5-01ebec50ccca)  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/328d7d7c-3b22-41b3-a6e5-5de34f04a881)  
 
 #### Categories
 Desktop:
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/2fa58c17-f9f6-4939-bed6-1017dc6b884c)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/2fa58c17-f9f6-4939-bed6-1017dc6b884c)  
 
-Mobile:  
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/09dcccec-a104-4999-b7b7-0c74532e2287)
+Mobile (medium and small):  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/09dcccec-a104-4999-b7b7-0c74532e2287)  
 
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/3f8001f9-1c85-48e2-880e-d41419c022a9)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/3f8001f9-1c85-48e2-880e-d41419c022a9)  
 
 #### Products
 Desktop:
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/628d584c-c978-4c8c-bf32-74d4e9b01732)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/628d584c-c978-4c8c-bf32-74d4e9b01732)  
 
-Mobile:  
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/732db934-32e5-4290-bb2e-58c0dc16683c)
+Mobile (medium and small):  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/732db934-32e5-4290-bb2e-58c0dc16683c)  
 
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/82b87cce-3705-486a-8032-c92435217537)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/82b87cce-3705-486a-8032-c92435217537)  
 
 
 #### Newsletter and footer
 Desktop:
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/c609faa5-21db-43a3-9fc0-23d0b9b1e396)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/c609faa5-21db-43a3-9fc0-23d0b9b1e396)  
 
-Mobile:  
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/a77c6247-e4fe-4bf7-98f4-a31aaa44b5a5)
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/46dc8838-d15d-43ec-9e4f-3a61711b1336)
+Mobile (medium and small):  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/a77c6247-e4fe-4bf7-98f4-a31aaa44b5a5)  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/46dc8838-d15d-43ec-9e4f-3a61711b1336)  
 
 
 ### Products
 #### All products
 Desktop:
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/7c749921-8be0-48d8-bf21-4ff9ea6b1f68)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/7c749921-8be0-48d8-bf21-4ff9ea6b1f68)  
 
-Mobile:  
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/501487b5-a007-47cd-9e98-7f5f189342d8)
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/05ba6dee-a27b-41a7-92eb-b3b4182c24ae)
+Mobile (medium and small):  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/501487b5-a007-47cd-9e98-7f5f189342d8)  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/05ba6dee-a27b-41a7-92eb-b3b4182c24ae)  
 
 
 #### Products from category "woman" with example filters and sort
 Desktop: 
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/8d1774d5-b36e-40db-a95d-c07f15be7fbb)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/8d1774d5-b36e-40db-a95d-c07f15be7fbb)  
 
-Mobile:  
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/773b72ea-0ade-4c2f-b3b3-b58254b910c2)
+Mobile (medium and small):  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/773b72ea-0ade-4c2f-b3b3-b58254b910c2)  
 
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/c1aad211-78e3-47aa-93b9-5f976cd39df4)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/c1aad211-78e3-47aa-93b9-5f976cd39df4)  
 
 #### Single product page
 Desktop:
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/1bab68a4-3cd8-494f-b513-1f3d45565055)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/1bab68a4-3cd8-494f-b513-1f3d45565055)  
 
 Mobile:  
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/500cf354-af21-431d-8891-5b23b1e06b07)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/500cf354-af21-431d-8891-5b23b1e06b07)  
 
 
 ### Cart
 Desktop:
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/bba8a9e2-bbcd-4bbb-85f9-6c346840acec)
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/d8c30684-8342-4a34-8f77-e3f286c6a4da)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/bba8a9e2-bbcd-4bbb-85f9-6c346840acec)  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/d8c30684-8342-4a34-8f77-e3f286c6a4da)  
 
-Mobile:  
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/f5b37eb8-e5b7-441d-8c98-4ddb46b76b60)
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/be44c5ef-828c-452f-a4c5-9b12b4134526)
+Mobile (medium and small):  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/f5b37eb8-e5b7-441d-8c98-4ddb46b76b60)  
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/be44c5ef-828c-452f-a4c5-9b12b4134526)  
 
 
 ### Registration and login page
 #### Register
 Desktop:
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/ca07698d-b62d-4e6f-b0d8-49052185cc7c)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/ca07698d-b62d-4e6f-b0d8-49052185cc7c)  
 Mobile:  
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/2bd47f78-63cf-40d6-9c64-ae098c10fe24)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/2bd47f78-63cf-40d6-9c64-ae098c10fe24)  
 
 
 #### Login
 Desktop:
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/0c878c58-6887-4255-b70f-a0fb230cd974)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/0c878c58-6887-4255-b70f-a0fb230cd974)  
 
 Mobile:  
-![image](https://github.com/Lenroc777/stylehub/assets/68342166/1c8f2138-7f36-4334-8627-a927a514c101)
+![image](https://github.com/Lenroc777/stylehub/assets/68342166/1c8f2138-7f36-4334-8627-a927a514c101)  
 
 
